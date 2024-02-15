@@ -1,0 +1,273 @@
+html{
+    font-family: 'Courier New', sans-serif;
+    font-size: 16px;
+}
+
+body{
+    margin: 0px;
+}
+
+main{
+    flex: 1;
+}
+
+header{
+    background-color: #8f948d;
+    display: flex;
+}
+
+footer{
+    background-color: #d57275;
+    padding: 5px;
+}
+
+h1{
+    color: #363741;
+    font-size: 1.5em;
+}
+
+h2, h3{
+    font-family: "arial", sans-serif;
+    margin: 20px 10px;
+}
+
+blockquote{
+    background-color: #8f948d;
+    padding: 5px;
+    padding-left: 15px;
+    border: 2px solid black;
+    border-radius: 10px;
+}
+
+#website_logo{
+    width: 65px;
+    margin: 8px;
+}
+
+#welcome{
+    background-color: #efeada;
+    padding: 0px;
+}
+
+#main-navigation{
+    display: flex;
+    list-style-type: none;
+    list-style-image: none;
+    background-color: #d57275;
+    justify-content: flex-start;
+    margin-top: 0px;
+    margin-bottom: 0px;
+    padding: 5px;
+    border-top: 2px solid black;
+    border-bottom: 2px solid black;
+}
+
+#store-title{
+    margin-top: 25px;
+}
+
+#footer-nav{
+    display: flex;
+    list-style-type: none;
+    list-style-image: url(../images/twitter_logo.png);
+    padding: 0px;
+    justify-content: space-around;
+}
+
+#main-content-1, #main-content-2{
+    background-color: #efeada;
+    margin: 10px;
+    padding: 10px;
+}
+
+
+#wrapper{
+    max-width: 1900px;
+    margin: auto;
+
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    background-color: #7e6f50;
+}
+
+.main-content{
+    background-color: #efeada;
+    margin: 10px;
+    padding: 10px;
+}
+
+.product-grouping{
+    margin: 0px;
+}
+
+.images{
+    max-width: 100%;
+}
+
+.article-group{
+    background: #efeada;
+    padding: 5px;
+    margin: 10px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.individual-article, .stretched-article{
+    border: 2px solid black;
+    margin: 5px;
+}
+
+.main-article{
+    padding: 8px;
+    margin: 5px;
+    border: 2px solid black;
+}
+
+.nav-list{
+    border-right: 1px solid black;
+    padding: 2px;
+}
+
+.nav-links{
+    color: #efeada;
+    padding-left: 2px;
+    padding-right: 5px;
+    text-decoration: none;
+}
+
+.nav-links:hover, .nav-links:focus{
+    text-decoration-line: underline;
+}
+
+.nav-links:active{
+    background-color: #efeada;
+    color: black;
+}
+
+.hyperlink:link{
+    color: #7e6f50
+}
+
+.hyperlink:visited{
+    color:#363741
+}
+
+.hyperlink:focus, .hyperlink:hover{
+    background-color:#8f948d;
+    padding: 0px 5px;
+}
+
+.hyperlink:active{
+    background-color: yellow;
+    padding: 0px 5px;
+}
+
+.title-and-description{
+    margin: 5px;
+    padding: 5px;
+}
+
+.unordered-list-layout{
+    list-style-type: square;
+}
+
+.article-image{
+    border: 2px solid black;
+}
+
+.quote{
+    font-weight: bolder;
+}
+
+.ordered-list-layout{
+    list-style-type: lower-latin;
+}
+
+.code-example{
+    background-color: #8f948d;
+    padding: 5px;
+    padding-left: 15px;
+    border: 2px solid black;
+    border-radius: 10px;
+    font-size: medium;
+}
+
+.price{
+    margin: 0px;
+    padding: 10px;
+    font-size: 1.1em;
+    font-weight: bolder;
+    background-color: #d57275;
+}
+
+.individual-product{
+    border: 2px solid black;
+    margin: 5px;
+    margin-bottom: 10px;
+}
+
+.product-description{
+    margin: 5px;
+}
+
+@media (min-width: 600px){
+    .product-grouping{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+    }
+    .stretched-article, .individual-article{
+        max-width: 46%;
+        justify-content: space-around;
+    }
+    .individual-product{
+        max-width: 47%;
+    }
+}
+
+@media (min-width: 1024px){
+    main{
+        display: flex;
+        justify-content: space-around;
+        flex-wrap: wrap;
+    }
+
+    #main-content-1, #main-content-2{
+        max-width: 46%;
+    }
+
+    .product-grouping{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+    }
+    .main-article{
+        max-width: 57%;
+        justify-content: space-around;
+    }
+
+    .stretched-article{
+        max-width: 37%;
+        justify-content: space-around;
+    }
+    .individual-article{
+        max-width: 47%;
+        justify-content: space-around;
+    }
+    .individual-product{
+        max-width: 23%;
+    }
+}
+
+@media (min-width: 1350px){
+    .stretched-article, .individual-article{
+        max-width: 21%;
+        justify-content: space-around;
+    }
+    .main-article{
+        max-width: 31%;
+        justify-content: space-around;
+    }
+}
